@@ -251,15 +251,126 @@ header{
   grid-column: span 2;
   grid-row: span 1;
 }
+.featured{
+  background-color: #1A0B2E;
+}
+.featured-section{
+  max-width: 1200px;
+  margin: 0 auto;
 
+}
+.featured-container{
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
 
+.featured-section>h3{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+}
+  
+.card-container iframe{
+  width: 100%;
+  
+}
+.card-title>h4{
+  font-size: 24px;
+  font-weight: bold;
+  color:#FFFFFF;
+  text-align: center;
+  margin-top: 24px;
+}
+.card-title>p{
+  font-size: 1rem;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 12px;
+}
+ .card-title .icon{
+  font-size: 1rem;
+  line-height: 24px;
+  color: #00FF88;
+ }
 
+ .card-title .icon{
+  padding:25px;
+
+ }
+
+.featured-contact{
+  margin-top: 120px;
+  border-radius: 40px;
+}
+.featured-contact>h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.host-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+.featured-contact>h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.host-img>img{
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+}
+
+.host-title>h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.host-title>p{
+  font-size: 1rem;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.host-icon{
+  display: flex;
+  gap: 8px;
+}
+.icon1{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 1px solid  #533C72;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
 @media screen and (max-width:576px) {
 
   .menu-container,
-  .subscribe-btn
+  .subscribe-btn 
   {
     display: none;
   }
@@ -268,7 +379,10 @@ header{
   display: inline;
 }
 
-  .banner , .about-box{
+  .banner ,
+   .about-box ,
+   .featured-container,
+   .host-container{
     flex-direction: column;
   }
 
@@ -322,4 +436,29 @@ header{
  margin: 0 20px;
  border-radius: 24px;
 }
+
+.featured-container{
+  width: 100%;
+  gap: 16px;
+}
+
+.host-container{
+  width: 100%;
+  text-align: center;
+  padding: 24px;
+}
+
+
+.featured-contact>h1{
+  font-size: 1.5rem;
+}
+
+.host-icon{
+  justify-content: center;
+}
+
+.featured-contact>h1{
+  font-size: 2rem;
+}
+
 }
